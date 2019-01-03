@@ -12,8 +12,12 @@ class Form extends Component {
     this.setState({value: event.target.value});
   }
   handleSubmit(event) {
+    // Create alert
     alert(this.state.value + ', you are beautiful!');
+    // Prevent default submit
     event.preventDefault();
+    // Clear input
+    this.setState({value: ''});
   }
   render() {
     return (
