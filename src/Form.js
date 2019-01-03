@@ -24,7 +24,7 @@ class Form extends Component {
       <form onSubmit={this.handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
-          <input id="name" type="text" name="name" value={this.state.value} onChange={this.handleChange} className="form-control" />
+          <input id="name" type="text" name="name" value={this.state.value} onChange={this.handleChange} className="form-control" required />
         </div>
         <button type="submit" className="btn btn-success">Submit</button>
       </form>
